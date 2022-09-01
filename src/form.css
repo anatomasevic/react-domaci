@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    /*display: flex;*/
+    background: #0d6efd;
+    /*padding:0 10px;
+    min-height: 100vh;
+    
+    align-items: center;
+    justify-content: center;*/
+}
+.wrapper {
+    display: inline-block;
+    width: 600px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+    height: 400px;
+    padding: 10px 40px;
+    margin: 50px;
+   margin-left: 40px;
+    margin-right: 40px;
+   
+    
+}
+ .title{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    
+    
+    
+
+}
+.title-note{
+    width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  outline: none;
+  
+
+}
+.description-note{
+    display: block;
+    width: 100%;
+    padding: 0 5px;
+    height: 200px;
+    position: relative;
+    text-align: left;
+   float: left;
+   border:none;
+    background: none;
+    outline: none;
+}
+
+.Add-button{
+    
+        padding: 16px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        outline: none;
+        background: linear-gradient(
+          90deg,
+          rgba(93, 12, 255, 1) 0%,
+          rgba(155, 0, 250, 1) 100%
+        );
+        color: #fff;
+        text-transform: capitalize;
+      
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+   /* margin-right: 10px;
+    */
+  }
+  
+  .delete-icon {
+   /*margin-right: 5px;*/
+    color: rgb(224, 42, 42);
+   
+    
+  }
+  
+  .edit-icon {
+    color: rgb(236, 29, 29);
+    
+  }
+
+  
+.wraper-all {
+  display: inline-block;
+  width: 200px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+  height: 200px;
+  padding: 10px 40px;
+  margin: 50px;
+ margin-left: 40px;
+  margin-right: 40px;
+ 
+  
+}
+
+.title-note-all{
+  width: 100%;
+padding: 0 5px;
+height: 40px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+background: none;
+outline: none;
+
+
+}
+.description-note-all{
+  display: block;
+  width: 100%;
+  padding: 0 5px;
+  height: 120px;
+  position: relative;
+  text-align: left;
+ float: left;
+ border:none;
+  background: none;
+  outline: none;
+}
