@@ -125,11 +125,11 @@ useEffect(()=>{
 
     const proba=e =>{
        
-       e.preventDefault();
-       edittNote(id, updateNote);
-       console.log("dugme edit ");
-       console.log(updateNote);
-    }
+        e.preventDefault();
+        edittNote(id, updateNote);
+        console.log("dugme edit ");
+        console.log(updateNote);
+     }
     const navigateFav = ()=>{
         editing=addedNote;
         
