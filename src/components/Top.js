@@ -36,15 +36,7 @@ function Top() {
     const[idedit,setIdEdit]=useState("");
     function onAdd(note){
         console.log("Dodat je proizvod");
-       /* if(!note.title || /^\s*$/.test(note.title)){
-            return;
-        }
-        console.log(note.title);
-        if(!note.description || /^\s*$/.test(note.description)){
-            return;
-        }
-        console.log(note.description);*/
-        //const newNotes =[note, ...notes]; ovo je kad se novi dodaje na pocetak tako mi je bilo
+      
         const newNotes =[...notes, note];
         setCounter((prevState)=>prevState+1);
         console.log("Vrednost countera "+ counter);
@@ -72,10 +64,7 @@ function Top() {
     function edittNote(id,updateNote){
         const newNo=notes.map((note)=>note.id===id? updateNote : note);
         setNotes(newNo);
-        console.log("u funkciji");
-        console.log(notes);
-        console.log(newNo);
-        console.log(updateNote);
+        
     }
 
     function setIdArray(){

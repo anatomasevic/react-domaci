@@ -43,14 +43,3 @@ function Navbar() {
 
 export default Navbar;
 
-/*
- <a href="#" className="nav__brand">
-        herdoy
-      </a>
-
-  <li className="nav__item">
-          <Link to="/fav" className="nav__link">
-            Favourites
-          </Link>
-        </li>
-*/

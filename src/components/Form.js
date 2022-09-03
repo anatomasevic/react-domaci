@@ -10,32 +10,16 @@ function Form({addedNote,edittNote,counter,notes,keyid,setkeyid, onAdd, allNotes
     const navigate = useNavigate();
     const[edittitle, seteditTitle] = useState(addedNote.titlee || addedNote.edittitle);
     const[editdescription, seteditDescription]= useState(addedNote.descriptionn || addedNote.editdescription);
-   const[editMode, setEdit] = useState('');
+  
     const[description, setDescription]= useState('');
-    const[note1, setNote1]=useState('');
+    
     const id = addedNote.id;
     const updateNote ={id, edittitle, editdescription};
-    //const[addedTitle, setAddedTitle] = useState('');
-   // const[addedDesc, setAddedDesc]= useState('');
-   
-   /* const[notes, setNotes] = useState([{
-        id: Math.floor(Math.random()*10000),
-        titlee: "prvi",
-        descriptionn: "drugi"
-   
-    }]);
-
-
-*/
+    
 
 
 useEffect(()=>{
 
-  
-
-   // console.log(editing);
-    
-   // console.log(addedNote);
   
   },[addedNote,editing])
 
@@ -57,35 +41,24 @@ useEffect(()=>{
         editing = addedNote;
         
         
-        //setAddedTitle(addedNote.titlee);
-        //setAddedDesc(addedNote.descriptionn);
-        console.log("ovo je dodata note");
-        console.log("editNote vrednost " + editNote);
         idedit=addedNote.id;
-        console.log("editNote vrednost za idedit " + idedit);
+        //console.log("editNote vrednost za idedit " + idedit);
         seteditTitle(note);
-        console.log("ovo je edit");
-        console.log(edittitle);
+        //console.log("ovo je edit");
+        //console.log(edittitle);
         
-        console.log(editing);
-        console.log(addedNote.id);
+        //console.log(editing);
+       // console.log(addedNote.id);
         seteditDescription(editing.description);
-        console.log("ovo je postavljeno polje za edit");
-        console.log(editdescription);
+       // console.log("ovo je postavljeno polje za edit");
+        //console.log(editdescription);
         onAdd(note);
-       /* console.log(note);
-      
        
-        console.log(title);
-        console.log(description);
-        */
-        //console.log(notes);
-        //seteditTitle(addedNote);
         seteditDescription(addedNote.descriptionn);
         setTitle('');
         setDescription('');
-        console.log(edittitle);
-        console.log("edit "+ editdescription);
+        //console.log(edittitle);
+        //console.log("edit "+ editdescription);
          
       
 
@@ -151,19 +124,7 @@ useEffect(()=>{
     }
 
     const proba=e =>{
-       /* const note1={
-            id:addedNote.id,
-            title:edittitle.title,
-            description:edittitle.description
-        }
-        seteditTitle(note1);
-        console.log("nakon izmene");
-        console.log(edittitle.id);
-        console.log(edittitle.title);
-        console.log(edittitle.description);
-        console.log(editing.title);
-        console.log(editing.description);*/
-       // console.log("dugme edit");
+       
        e.preventDefault();
        edittNote(id, updateNote);
        console.log("dugme edit ");
@@ -171,19 +132,14 @@ useEffect(()=>{
     }
     const navigateFav = ()=>{
         editing=addedNote;
-        console.log(addedNote);
-        console.log("najnovije");
+        
         editNote = 1;
        
 
-        console.log(keyid + " ovo je vrednost editNota nakon sto se klikne dugme za update")
         
-
-        console.log("navigateFunktion onde je " +idedit);
-        console.log(editing);
-        //navigate('/fav');
+        
         navigate('/fav/'+keyid);
-       //<Link to = {'/fav/'+{keyid}}></Link>
+       
     }
 
     
@@ -207,7 +163,7 @@ useEffect(()=>{
      <TiEdit
 
      className='edit-icon'
-     /*onClick={()=> editt(addedNote.id)}*/
+     
      onClick={navigateFav}
 
      
