@@ -1,7 +1,7 @@
-import React, { useState , useEffect} from 'react'
+
 import Form from './Form'
 import '../form.css'
-import Notes from './Notes'
+
 import {useParams} from 'react-router-dom'
 
 function Fav({edittNote, notes}) {

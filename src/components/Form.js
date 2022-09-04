@@ -57,6 +57,7 @@ useEffect(()=>{
         seteditDescription(addedNote.descriptionn);
         setTitle('');
         setDescription('');
+        navigate('/notes');
         //console.log(edittitle);
         //console.log("edit "+ editdescription);
          
@@ -129,6 +130,7 @@ useEffect(()=>{
         edittNote(id, updateNote);
         console.log("dugme edit ");
         console.log(updateNote);
+        navigate('/notes');
      }
     const navigateFav = ()=>{
         editing=addedNote;

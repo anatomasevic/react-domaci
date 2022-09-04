@@ -2,10 +2,10 @@ import React from 'react'
 
 import Form from './Form'
 
-const Notes = ({notes,edittNote, deleteNote, edit,editing,idedit, editNote}) => {
+const Notes = ({notes,edittNote, deleteNote, edit}) => {
   return (
       <div className="container-all-notes">
-          <h3>All notes</h3>
+          
          <>
           {notes?.map((note)=>
           

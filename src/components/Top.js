@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Form from './Form'
 import { useState } from 'react';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, useNavigate, Navigate} from "react-router-dom";
 import Notes from './Notes';
 import Fav from './Fav';
 
@@ -46,6 +46,7 @@ function Top() {
         setNotes(newNotes);
         setEditNote(0);
     console.log(notes);
+   
 
     }
     function deleteNote(id){
