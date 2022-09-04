@@ -10,18 +10,15 @@ function Form({addedNote,edittNote,counter,notes,keyid,setkeyid, onAdd, allNotes
     const navigate = useNavigate();
     const[edittitle, seteditTitle] = useState(addedNote.titlee || addedNote.edittitle);
     const[editdescription, seteditDescription]= useState(addedNote.descriptionn || addedNote.editdescription);
-  
     const[description, setDescription]= useState('');
-    
     const id = addedNote.id;
     const updateNote ={id, edittitle, editdescription};
     
 
 
-useEffect(()=>{
+/*useEffect(()=>{
 
-  
-  },[addedNote,editing])
+  },[addedNote,editing])*/
 
     
 
@@ -66,6 +63,7 @@ useEffect(()=>{
        
        
     };
+    /*
     const newEditTitle =e =>{
        /// e.preventDefault();
         console.log("ovo je pre izmene naslova");
@@ -83,7 +81,7 @@ useEffect(()=>{
         addedNote.descriptionn = e.target.value;
         
         console.log(addedNote);
-    }
+    }*/
 
     function dele(id){
         console.log("delete funkcija"+ id);
@@ -92,7 +90,7 @@ useEffect(()=>{
         deleteNote(id);
     }
     
-    const edi = e =>{
+    /*const edi = e =>{
        
         e.preventDefault();
         const note1={
@@ -122,7 +120,7 @@ useEffect(()=>{
        console.log( edittitle.title);
        console.log(edittitle.description);
     
-    }
+    }*/
 
     const proba=e =>{
        
@@ -151,12 +149,12 @@ useEffect(()=>{
     <div className={allNotes===1 ?'wraper-all':'wrapper'}>
         {allNotes ===1?(<> <div className='title2'>
 
-    <input type='text'  value= {addedNote.titlee || addedNote.edittitle} onChange={newEditTitle} className='title-note-all'></input>
+    <input type='text'  value= {addedNote.titlee || addedNote.edittitle} readOnly={true} /*onChange={newEditTitle}*/ className='title-note-all'></input>
 
     </div>
 
     <div className='desscription2'>
-    <textarea type='text'  value={addedNote.descriptionn || addedNote.editdescription} onChange={newEditDesc} className= 'description-note-all' ></textarea>
+    <textarea type='text'  value={addedNote.descriptionn || addedNote.editdescription} readOnly={true}/*onChange={newEditDesc} */className= 'description-note-all' ></textarea>
     </div>
     <div className='icons'>
     
